@@ -1,0 +1,40 @@
+.Team-Message p{
+    margin-block-end: 0px;
+}
+
+.Team-Message{
+    background-color: black;
+    color: white;
+}
+
+.Team-Banner { 
+    padding: 1.5em; 
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.Team-Members{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.Pinak{
+    width: 30%;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.Michelle{ 
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.Team-Descriptions{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
