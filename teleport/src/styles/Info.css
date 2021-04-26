@@ -1,0 +1,27 @@
+.Info-Banner {
+  padding: 1.5em;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 2em;
+}
+.Info-Background{
+  max-width: 100%;
+}
+.Info-Container-Stepper {
+  max-width: 100%;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Info-Message {
+  width: 30%;
+  font-size: 1.5em;
+  text-align: left;
+}
+.Info-Image {
+  width: 45%;
+}

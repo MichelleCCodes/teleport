@@ -1,33 +1,94 @@
 import React from "react";
+import '../styles/Info.css';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import MobileStepper from '@material-ui/core/MobileStepper';
+import Button from '@material-ui/core/Button';
+import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
-paragraphs = [
+//images
+import Background from '../images/background.jpg';
+import LandingPage from '../images/Info/landingpage.jpg';
+import Signup from '../images/Info/signup.jpg';
+import Memories from '../images/Info/memories.jpg';
+import Collaborative from '../images/Info/collaborative.jpg';
+
+const useStyles = makeStyles({
+  root: {
+    margin: 'auto',
+  },
+});
+
+const texts = [
   {
-    h2: "Introducing Teleport",
-    p:
-      "A smart chat platform for connecting people and cultures because distance is just a number. Teleport helps you connect with locals anywhere around the world, learn new languages, and experience new cultures. We take care of bridging gaps by translating texts to your language of choice and providing informative resources about cultures and languages. Share your learning experiences and accomplishments on Teleport! You can soon feel at home anywhere in the world and create moments to remember.",
-    img:"link to import here"
-    },
+  h2: "What does Teleport offer?",
+  pOne:
+  "A collaborative learning experience with inline translation for incoming and outgoing texts. Search for language exchange partners or potential friends by native language, city, or distance from you!",
+  pTwo: "Share experiences, build a strong community of cultural exchanges, and stay connected with locals across the world.",    
+  img: Collaborative, 
+  alt: "Preview of personal profile and other users on Teleport"
+},
   {
     h2: "Cultures, Experiences, and Memories!",
-    p:
-      "Learn a language and share culture by chatting with native speakers around the world. Chat with new friends around the world via text, voice recordings, voice calls, and video calls! Whatever your communication preference, we have you covered. Engage with the Teleport community by posting Experiences. Post these experiences, use inline translation for smooth conversation, and get curated resources for learning language and culture. We make sure there are no barriers for you to learn new things on Teleport.",
-    img:"link to import here"
-    },
+    pOne:
+    "Learn a language and share culture by chatting with native speakers around the world. Chat with new friends around the world via text, voice recordings, voice calls, and video calls!",
+    pTwo: "Whatever your communication preference, we have you covered. There are no barriers for you to learn new things on Teleport.",
+    img: Memories, 
+    alt: "Celebration with fireworks over FaceTime via Teleport"
+  },
   {
-    h2: "What do we offer?",
-    p:
-      "A collaborative learning experience with inline translation for incoming and outgoing texts. Search for language exchange partners or potential friends by native language, city, or distance from you. Share experiences, build a strong community of cultural exchanges, and stay connected with locals across the world. Chat with friends via text, voice recordings, voice calls, and video calls without a language barrier.",
-    img:"link to import here"  
+    h2: "Sign up for Teleport today!",
+    pOne:
+      "Teleport helps you connect with locals anywhere around the world, learn new languages, and experience new cultures.",
+      pTwo: "You can soon feel at home anywhere in the world and create moments to remember.",
+      img: Signup,
+      alt: "Sign-up page of Teleport"
     },
 ];
 
 function Info() {
+  const classes = useStyles();
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = React.useState(0);
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
   return (
     <div className="Info-Container">
-      <div className="Info-Banner">
-        <h1>Bringing the world to your home by Teleport.</h1>
-      </div>
-      <div>Scroll through here, import progress bar, right and left arrows. Split between picture and paragraphs.</div>
+    <div className="Info-Banner">Bring the world to you through Teleport.</div>
+    <img className="Info-Background" src={Background} alt="different cultures"/>
+    <div className="Info-Container-Stepper">
+    <div className="Info-Message">
+      <h2>{texts[activeStep].h2}</h2>
+      <p>{texts[activeStep].pOne}</p>
+      <p>{texts[activeStep].pTwo}</p>
+    </div>
+    <img src={texts[activeStep].img} alt={texts[activeStep].alt} className="Info-Image"/>
+    </div>
+    <MobileStepper
+      variant="dots"
+      steps={3}
+      position="static"
+      activeStep={activeStep}
+      className={classes.root}
+      nextButton={
+        <Button size="small" onClick={handleNext} disabled={activeStep === 2}>
+          {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+        </Button>
+      }
+      backButton={
+        <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+          {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+          
+        </Button>
+      }
+    />
     </div>
   );
 }
