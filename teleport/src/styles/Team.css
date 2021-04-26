@@ -5,6 +5,19 @@
 .Team-Message{
     background-color: black;
     color: white;
+    display: flex;
+    padding: 3em;
+    justify-content: space-evenly;
+}
+
+.Team-Message img{
+    width: 40%;
+}
+
+.Team-Message-Text{
+    font-size: 1.5em;
+    width: 40%;
+    text-align: left;
 }
 
 .Team-Banner { 

@@ -11,12 +11,13 @@ const members = [
     {name:"Michelle Chen", role:"Design & Front End", focusOne:"React", focusTwo:"Prototyping", focusThree:"Web Development"}
 ]
 const messages = {
-    title: "People Matter, Distance Doesn't.", 
+    title: "People Matter -", 
+    titleTwo: "Distance Doesn't.",
     lineOne: "At Teleport we celebrate diversity and bring people a step closer because great ideas come when all people are celebrated.",
     lineTwo: "Diversity is not just a concept but a tangible power that can lead to new ideas, thoughts, and experiences to cherish and celebrate. This is our core philosophy at Teleport."
 }
 const introductions = {
-    banner: "The team behind Teleport...", 
+    banner: "Meet the team behind Teleport...", 
     header: "Teleport Engineers"
 }
 
@@ -25,9 +26,12 @@ function Team(){
       <>
         <div className="Team-Message">
           <img src={grid} alt="diverse grid of people" className/>
+          <div className="Team-Message-Text">
           <h2>{messages.title}</h2>
+          <h2>{messages.titleTwo}</h2>
           <p>{messages.lineOne}</p>
           <p>{messages.lineTwo}</p>
+          </div>
         </div>
         <div className="Team-Banner">{introductions.banner}</div>
         <h1>{introductions.header}</h1>

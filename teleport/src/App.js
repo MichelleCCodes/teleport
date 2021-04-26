@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
     <Team/>
-    <div className="App-Banner">Coming soon to an App Store near you!(bottom)</div>
+    <div className="App-Banner">Coming soon to an App Store near you!</div>
     </div>
   );
 }
