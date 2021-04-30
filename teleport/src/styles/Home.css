@@ -1,8 +1,10 @@
+
 .Home-Container{
     display: flex;
     max-width: 100%;
     align-items: center;
     margin: 2em;
+    justify-content: space-around;
 }
 
 .Talk-Bubble{
@@ -18,58 +20,30 @@
 }
 
 .Home-Left{
-    width:60%;
-    font-size: 1.5em;
-    text-align: left;
-}
-.Home-Right{
-    display: table-cell;
-}
-.Home-Right img{
-    max-width: 100%;
+  width: 50%;
+  font-size: 1.5em;
+  text-align: left;
 }
 
-/* Example */
-/* http://css3.bradshawenterprises.com/cfimg/
-#cf {
-    position:relative;
-    height:281px;
-    width:450px;
-    margin:0 auto;
+.Home-Right{
+  /* border: 2px solid red;  */
+  width: 30%;
+}
+
+.slider{
+  width: 50vw;
+  height: 50vh;
+  border: 1px red solid;
+  background: url(../images//Home/p0.jpg);
+  background-repeat: no-repeat;
+  animation: slide 11s infinite;
+}
+
+@keyframes slide{
+  25%{
+    background-image: url(../images//Home/p1.jpg);
   }
-  
-  #cf img {
-    position:absolute;
-    left:0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+  50%{
+    background-image: url(../images//Home/p2.jpg);
   }
-  
-  #cf img.top:hover {
-    opacity:0;
-  }
-  /* Timer */
-  /* @keyframes cf3FadeInOut {
-    0% {
-    opacity:1;
-  }
-  45% {
-  opacity:1;
-  }
-  55% {
-  opacity:0;
-  }
-  100% {
-  opacity:0;
-  }
-  }
-  
-  #cf3 img.top {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-direction: alternate;
-  } */
+}

@@ -38,24 +38,15 @@ function Home() {
         </p>
       </div>
       <div className="Home-Right">
-        <img src={images[2].src} alt={images[2].alt}/>
         {/* {images.map(image => {
           return(
-            <img src={image.src} alt={image.alt}/>
+            <img key={image.src} src={image.src} alt={image.alt}/>
           )
-          })} */}
-         
-
+        })} */}
+        <div className="slider"></div>
       </div>
     </div>
   );
 }
 
 export default Home;
-
-// Example
-
-<div id="cf">
-  <img class="bottom" src="/images/Cirques.jpg" />
-  <img class="top" src="/images/Clown%20Fish.jpg" />
-</div>
