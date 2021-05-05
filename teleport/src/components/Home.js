@@ -28,6 +28,7 @@ function Home() {
               )
           })}
         </div>
+        <div className="Home-Text">
         <p>
           In today’s ever-globalized society, language skills have become key in
           landing jobs, getting better travel opportunities, and making
@@ -36,13 +37,9 @@ function Home() {
         <p>
           Here's how <strong>Teleport</strong> can help.
         </p>
+        </div>
       </div>
       <div className="Home-Right">
-        {/* {images.map(image => {
-          return(
-            <img key={image.src} src={image.src} alt={image.alt}/>
-          )
-        })} */}
         <div className="slider"></div>
       </div>
     </div>

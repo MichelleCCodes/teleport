@@ -2,9 +2,9 @@
 .Home-Container{
     display: flex;
     max-width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
     align-items: center;
-    margin: 2em;
-    justify-content: space-around;
 }
 
 .Talk-Bubble{
@@ -20,23 +20,28 @@
 }
 
 .Home-Left{
-  width: 50%;
+  width: 30%;
   font-size: 1.5em;
   text-align: left;
+  margin: 0 auto;
 }
 
 .Home-Right{
-  /* border: 2px solid red;  */
-  width: 30%;
+  width: 50%;
+  height:100vh;
+  /* border: 3px solid green; */
+  display:flex;
+  align-items: center;
 }
 
 .slider{
-  width: 50vw;
-  height: 50vh;
-  border: 1px red solid;
-  background: url(../images//Home/p0.jpg);
+  /* border: 3px solid rgb(0, 0, 0); */
+  margin-top: 2em;
+  width: 100vw;
+  height: 95vh;
+  background-image: url(../images//Home/p0.jpg);
   background-repeat: no-repeat;
-  animation: slide 11s infinite;
+  animation: slide 10s infinite;
 }
 
 @keyframes slide{
