@@ -8,7 +8,6 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 //images
 import Background from '../images/background.jpg';
-import LandingPage from '../images/Info/landingpage.jpg';
 import Signup from '../images/Info/signup.jpg';
 import Memories from '../images/Info/memories.jpg';
 import Collaborative from '../images/Info/collaborative.jpg';

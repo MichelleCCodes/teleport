@@ -1,16 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
 
-import firstPic from '../images/Home/p0.jpg'
-import secondPic from '../images/Home/p1.jpg'
-import thirdPic from '../images/Home/p2.jpg'
-
-const images = [
-  {src:firstPic, alt:"elder welcoming"},
-  {src:secondPic, alt:"man with colorful turban"},
-  {src:thirdPic, alt:"man posing in farm field"},
-]
-
 const bubbles = [
   {text:"你好"},
   {text:"नमस्ते"},
