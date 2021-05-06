@@ -1,3 +1,3 @@
 # teleport
-Check out the current version: 
+Check out the latest version: 
 https://teleport-developersweek2021.vercel.app/
