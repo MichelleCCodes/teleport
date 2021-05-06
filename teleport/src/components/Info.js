@@ -69,6 +69,7 @@ function Info() {
         </div>
       <div className="Figma">
       <iframe
+      title="figma"
         id="figma"
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAjpL1uL2lGqkuxF2T7ELL7%2FTeleport%3Fnode-id%3D167%253A74%26viewport%3D-1144%252C512%252C0.22399234771728516%26scaling%3Dscale-down%26page-id%3D0%253A1"
         allowfullscreen
