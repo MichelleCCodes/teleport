@@ -11,7 +11,7 @@ const members = [
     {name:"Michelle Chen", role:"Design & Front End", focusOne:"React", focusTwo:"Prototyping", focusThree:"Web Development"}
 ]
 const messages = {
-    title: "People Matter -", 
+    title: "People Matter,", 
     titleTwo: "Distance Doesn't.",
     lineOne: "At Teleport we celebrate diversity and bring people a step closer because great ideas come when all people are celebrated.",
     lineTwo: "Diversity is not just a concept but a tangible power that can lead to new ideas, thoughts, and experiences to cherish and celebrate. This is our core philosophy at Teleport."
