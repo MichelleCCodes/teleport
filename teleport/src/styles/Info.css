@@ -10,17 +10,18 @@
 }
 .Info-Container-Stepper {
   max-width: 100%;
-  padding-top: 3em;
-  padding-bottom: 2em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  /* border: green solid 1px; */
+  margin-top: 2em;
 }
 
 .Info-Message {
   width: 30%;
   font-size: 1.5em;
   text-align: left;
+  height: 85vh;
 }
 .Info-Image {
   width: 45%;
