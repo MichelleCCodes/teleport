@@ -12,11 +12,11 @@ function Home() {
     <div className="Home-Container">
       <div className="Home-Left">
         <div className="Home-Bubbles">
-          {bubbles.map(bubble=> {
-            return(
-              <div className="Talk-Bubble">{bubble.text}</div>
+            {bubbles.map(bubble => {
+              return(
+                <div className="Talk-Bubble">{bubble.text}</div>
               )
-          })}
+            })}
         </div>
         <div className="Home-Text">
         <p>
