@@ -41,28 +41,28 @@
   margin-top: 2em;
   width: 100vw;
   height: 95vh;
-  background-image: url(../images//Home/p0.jpg);
+  background-image: url(../images/Home/p0.jpg);
   background-repeat: no-repeat;
-  animation: slide 15s infinite;
+  animation: slide 17s infinite;
 }
 
 @keyframes slide{
   0%{
-    background-image: url(../images//Home/p0.jpg);
+    background-image: url(../images/Home/p0.jpg);
   }
   20%{
-    background-image: url(../images//Home/p1.jpg);
+    background-image: url(../images/Home/p1.jpg);
   }
   40%{
-    background-image: url(../images//Home/p2.jpg);
+    background-image: url(../images/Home/p2.jpg);
   }
   60%{
-    background-image: url(../images//Home/p0.jpg);
+    background-image: url(../images/Home/p0.jpg);
   }
   80%{
-    background-image: url(../images//Home/p1.jpg);
+    background-image: url(../images/Home/p1.jpg);
   }
   100%{
-    background-image: url(../images//Home/p2.jpg);
+    background-image: url(../images/Home/p2.jpg);
   }
 }
