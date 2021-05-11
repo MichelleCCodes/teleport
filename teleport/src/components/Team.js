@@ -1,5 +1,7 @@
 import React from 'react'; 
 import '../styles/Team.css';
+import { FaGithub } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
 
 //images
 import Michelle from '../images/michelle.jpg'
@@ -7,8 +9,8 @@ import Pinak from '../images/pinak.jpg'
 import grid from '../images/grid.jpg'
 
 const members = [
-    {name:"Pinak Sawhney", role:"Ideation & Backend", focusOne:"Cloud", focusTwo:"Distributed", focusThree:"Web Development"}, 
-    {name:"Michelle Chen", role:"Design & Front End", focusOne:"React", focusTwo:"Prototyping", focusThree:"Web Development"}
+    {name:"Pinak Sawhney   ", role:"Ideation & Backend", focusOne:"Cloud", focusTwo:"Distributed", focusThree:"Web Development", gitHub: "https://github.com/pinaksawhney", linkedIn:"https://www.linkedin.com/in/pinaksawhney/"}, 
+    {name:"Michelle Chen   ", role:"Design & Front End", focusOne:"React", focusTwo:"Prototyping", focusThree:"Web Development", gitHub: "https://github.com/MichelleCCodes", linkedIn:"https://www.linkedin.com/in/michelleccodes/"}
 ]
 const messages = {
     title: "People Matter,", 
@@ -43,11 +45,14 @@ function Team(){
             {members.map((member)=> {
                 return(
             <div key={member.name} className="Team-Description">
-                <h2>{member.name}</h2>
+                <h2>{member.name} 
+                <a href={member.gitHub} target="_blank" rel="noreferrer"><FaGithub color="black"/></a>
+                <a href={member.linkedIn} target="_blank" rel="noreferrer"><FaLinkedin color="black"/></a>
+                </h2>
                 <h4>{member.role}</h4>
-                <p>{member.focusOne}</p>
-                <p>{member.focusTwo}</p>
-                <p>{member.focusThree}</p>
+                <div>{member.focusOne}</div>
+                <div>{member.focusTwo}</div>
+                <div>{member.focusThree}</div>
             </div>
                 )
             })}
